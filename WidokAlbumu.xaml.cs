@@ -15,9 +15,6 @@ using System.Windows.Shapes;
 
 namespace bindingDoKlas
 {
-    /// <summary>
-    /// Interaction logic for WidokAlbumu.xaml
-    /// </summary>
     public partial class WidokAlbumu : Window
     {
         public Album Album { get; set; }
