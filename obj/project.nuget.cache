@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "NEFp0xEpSUI1HhACiMkq2OmT/2shAlZX/IpF4SoZZbAVglgpf+v4EtOZDxxU6vzUeZyo7Gs+b8+vipmzGi4whQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\tymon\\source\\repos\\bindingDoKlas\\bindingDoKlas.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tymon\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

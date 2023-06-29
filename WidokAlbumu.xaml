@@ -1,0 +1,71 @@
+﻿<Window
+    x:Class="bindingDoKlas.WidokAlbumu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:bindingDoKlas"
+    mc:Ignorable="d"
+    Title="{Binding Tytuł}"
+    Height="500"
+    Width="400"
+    FontSize="30">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Label>Tytuł</Label>
+        <TextBox
+            Grid.Column="1"
+            Text="{Binding Tytuł, UpdateSourceTrigger=PropertyChanged}"/>
+
+        <Label Grid.Row="1">Autor</Label>
+        <TextBox
+            Grid.Column="1"
+            Grid.Row="1"
+            Text="{Binding Autor, UpdateSourceTrigger=PropertyChanged}"/>
+
+        <Label Grid.Row="2">Wydawca</Label>
+        <TextBox
+            Grid.Column="1"
+            Grid.Row="2"
+            Text="{Binding Wydawca, UpdateSourceTrigger=PropertyChanged}"/>
+
+        <Label Grid.Row="3">Nośnik</Label>
+        <ComboBox
+            Grid.Column="1"
+            Grid.Row="3"
+            SelectedItem="{Binding Nośnik, UpdateSourceTrigger=PropertyChanged}">
+            <ComboBoxItem>VHS</ComboBoxItem>
+            <ComboBoxItem>DVD</ComboBoxItem>
+            <ComboBoxItem>BlueRay</ComboBoxItem>
+            <ComboBoxItem>Kaseta</ComboBoxItem>
+            <ComboBoxItem>CD</ComboBoxItem>
+            <ComboBoxItem>Pendrive</ComboBoxItem>
+        </ComboBox>
+
+        <Label Grid.Row="4">Długość</Label>
+        <TextBox
+            Grid.Column="1"
+            Grid.Row="4"
+            Text="{Binding Długość, UpdateSourceTrigger=PropertyChanged}"/>
+
+        <Label Grid.Row="5">Data Wydania</Label>
+        <DatePicker
+            Grid.Column="1"
+            Grid.Row="5"
+            SelectedDate="{Binding DataWydania}"/>
+        <Button Content="Dodaj" HorizontalAlignment="Center" Margin="0,15,0,0" Grid.Row="6" VerticalAlignment="Top" Click="Dodaj_Click"/>
+    </Grid>
+</Window>

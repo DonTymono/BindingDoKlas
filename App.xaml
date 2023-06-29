@@ -1,0 +1,9 @@
+﻿<Application x:Class="bindingDoKlas.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:bindingDoKlas"
+             StartupUri="ListaAlbumów.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
